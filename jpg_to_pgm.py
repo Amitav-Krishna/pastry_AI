@@ -48,6 +48,7 @@ def read_jpeg_headers(filename):
             else:
                 print(f"Marker {hex(marker_type)} with length {length} found")
 
+# TODO: Finish Huffman Decoder
 def decode_huffman_data(file, huffman_tables, num_blocks):
     bitstream = get_bitstream(file)
     decoded_blocks = []
